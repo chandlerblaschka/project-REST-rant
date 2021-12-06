@@ -14,3 +14,10 @@ app.get('*', (req, res) => {
 })
 
 app.listen(process.env.PORT)
+
+// color scheme
+// Red: BF0603
+// Light Blue: 8EB1C7 
+// Light Grey: C1BFB5
+// Dark Purple: 4B3B47
+// Dark Grey/Green: 353535
