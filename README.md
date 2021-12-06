@@ -2,6 +2,8 @@
 
 REST-Rant is an app where users can view restaurants.
 
+## Routes
+
 | Method | Path | Purpose |
 | :---: | :--- | :--- |
 | GET | `/` | Home Page |
@@ -16,5 +18,16 @@ REST-Rant is an app where users can view restaurants.
 | DELETE | `/places/:id/rant/:rantId` | Delete a RANT (comment) About a Particular Place |
 | GET | `*` | 404 Page (matches any route not defined above) | 
 
+## Database
+
+**places**
+| Field | Type |
+| --- | --- |
+| _id | Object ID |
+| name | String |
+| city | String |
+| state | String |
+| cuisines | String |
+| pic | String |
 
 1. Bookmarked Github Documentation for [Basic Formatting Syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
