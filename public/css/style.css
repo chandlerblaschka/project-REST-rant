@@ -1,4 +1,12 @@
 h1 {
     text-align: center;
-    color: cornflowerblue;
+    color: rgb(171, 199, 250);
   }
+  
+  .homeImage img, .image404 img {
+    max-width: 1000px;
+}
+
+img {
+  width: 500px;
+}
