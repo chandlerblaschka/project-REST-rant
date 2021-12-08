@@ -5,7 +5,8 @@ function home() {
     return (
         <Def>
             <main>
-                <h1>Home</h1>
+                <h1>REST-Rant</h1>
+                <h3><a className="placesLink" href="/places">Places to Rant and Rave About!</a></h3>
                 <div className="homeImage">
                     <img src="/images/salad-home-image.jpg" alt="Harvest Salad"/>
                 </div>
