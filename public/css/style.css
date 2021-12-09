@@ -1,9 +1,21 @@
 h1 {
     text-align: center;
-    color: rgb(171, 199, 250);
+    color: cornflowerblue;
   }
-  
-  .homeImage img, .image404 img {
+
+h2 {
+  color: rgb(171, 199, 250);
+} 
+
+h3 {
+  color: rgb(171, 199, 250);
+}
+
+h4 {
+  color: rgb(171, 199, 250);
+}
+
+.homeImage img, .image404 img {
     max-width: 1000px;
 }
 
@@ -53,4 +65,38 @@ main {
   margin-right: 20px;
   margin-left: 20px;
   background-color: white;
+}
+.show-image {
+  display: flex;
+}
+
+.show-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 20px 20px 20px;
+}
+
+.show-comments {
+  padding: 10px;
+  margin: 20px;
+  border-top: 1px solid lightblue;
+  height: 150px;
+}
+
+.show-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.show-buttons .btn {
+  margin: 20px;
 }
