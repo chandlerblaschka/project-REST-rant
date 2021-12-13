@@ -23,10 +23,10 @@ function show (data){
                     <p>No comments yet!</p>
                 </div>
                 <div className='show-buttons'>
-                    <a href={`/places/${data.i}/edit`} className="btn btn-warning">
+                    <a href={`/places/${data.id}/edit`} className="btn btn-warning">
                         Edit
                     </a>
-                    <form method="POST" action={`places/${data.i}?_method=DELETE`}>
+                    <form method="POST" action={`places/${data.id}?_method=DELETE`}>
                         <button type="submit" className="btn btn-danger">
                             Delete
                         </button>
