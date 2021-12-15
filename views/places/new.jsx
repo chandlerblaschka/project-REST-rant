@@ -6,25 +6,25 @@ function new_form (data){
         <Def>
             <main>
                 <h1>Add a New Place</h1>
-                <form method="POST" action="/places">
+                <form method="POST" action="/places" className="form-format">
                     <div className="form-group">
-                        <label htmlFor="name">Place Name</label>
+                        <label className="form-text" htmlFor="name">Place Name</label>
                         <input className="form-control" id="name" name="name" required />
                     </div>
                     <div className="form-group">
-                        <label for="founded">Founded Year</label>
-                        <input className="form-control" id="founded" name="founded" />
+                        <label className="form-text" htmlFor="founded">Founded Year</label>
+                        <input className="form-control" id="founded" name="founded" value="2021"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="pic">Place Picture</label>
-                        <input className="form-control" id="pic" name="pic" />
+                        <label className="form-text" htmlFor="pic">Place Picture</label>
+                        <input className="form-control" id="pic" name="pic" value="/images/salad-home-image.jpg" />
                     </div>
                     <div className="form-group">
-                        <label htmlFor="city">City</label>
-                        <input className="form-control" id="city" name="city" />
+                        <label className="form-text" htmlFor="city">City</label>
+                        <input className="form-control" id="city" name="city" value="Anytown"/>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="state">State</label>
+                        <label className="form-text" htmlFor="state">State</label>
                         <select className="form-control" id="state" name="state">
                             <option value="" selected="selected">Select a State</option>
                             <option value="AL">Alabama</option>
@@ -81,10 +81,10 @@ function new_form (data){
                         </select>
                     </div>
                     <div className="form-group">
-                        <label htmlFor="cuisines">Cuisines</label>
+                        <label className="form-text" htmlFor="cuisines">Cuisines</label>
                         <input className="form-control" id="cuisines" name="cuisines" required />
                     </div>
-                    <input className="btn btn-primary" type="submit" value="Add Place" />
+                    <input className="btn btn-primary form-submit" type="submit" value="Add Place" />
                 </form>
             </main>
         </Def>

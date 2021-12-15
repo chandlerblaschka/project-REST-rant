@@ -1,7 +1,20 @@
+/* // color scheme
+// Red: BF0603
+// Light Blue: 8EB1C7 
+// Light Grey: C1BFB5
+// Dark Purple: 4B3B47
+// Dark Grey/Green: 353535 */
+
+/* html {
+  background-color: #8EB1C7;
+} */
+
 h1 {
+    padding: 10px 0 0 0;
     text-align: center;
-    color: cornflowerblue;
-  }
+    color: #8EB1C7;
+    margin: 0;
+}
 
 h2 {
   color: rgb(171, 199, 250);
@@ -32,7 +45,7 @@ h3 {
 }
 
 nav {
-  background-color: cornflowerblue;
+  background-color: #353535;
   padding: 10px;
 }
 
@@ -47,23 +60,22 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: #C1BFB5;
   font-size: 1.5em;
 }
 
 nav a:hover {
-  color: pink;
+  color: #BF0603;
   text-decoration: none;
 }
 
 body {
-  background-color: lightblue;
+  background-color: #8EB1C7;
   text-align: center;
 }
 
 main {
-  margin-right: 20px;
-  margin-left: 20px;
+  padding: 10px 0 10px 0;
   background-color: white;
 }
 .show-image {
@@ -99,4 +111,64 @@ main {
 
 .show-buttons .btn {
   margin: 20px;
+}
+
+div.row {
+  justify-content: center;
+  align-items: center;
+}
+
+.image-places {
+  max-height: 250px;
+  width: auto;
+}
+
+.form-format {
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin: 10px auto 10px auto;
+  padding: 15px;
+  border: 3px solid #353535;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin: 10px 0 10px 0;
+}
+
+.form-submit {
+  background-color: #353535;
+  border-color: #353535;
+  margin: 10px 0 0 0;
+}
+
+.form-submit:hover {
+  background-color: #BF0603;
+  border-color: #353535;
+}
+
+.form-text {
+  display: flex;
+  text-align: left;
+  color: #353535;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.form-control {
+  color: #C1BFB5;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  /* margin-top: -50px; */
+}
+
+.footer p {
+  margin: 0;
 }

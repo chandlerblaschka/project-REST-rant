@@ -24,6 +24,9 @@ function Def (html) {
                 </nav>
                 {html.children}
             </body>
+            <footer className='footer'>
+                <p>Chandler Blaschka Footer</p>
+            </footer>
         </html>
     )
 }
