@@ -13,15 +13,15 @@ function new_form (data){
                     </div>
                     <div className="form-group">
                         <label className="form-text" htmlFor="founded">Founded Year</label>
-                        <input className="form-control" id="founded" name="founded" value="2021"/>
+                        <input className="form-control" id="founded" name="founded" />
                     </div>
                     <div className="form-group">
                         <label className="form-text" htmlFor="pic">Place Picture</label>
-                        <input className="form-control" id="pic" name="pic" value="/images/salad-home-image.jpg" />
+                        <input className="form-control" id="pic" name="pic" />
                     </div>
                     <div className="form-group">
                         <label className="form-text" htmlFor="city">City</label>
-                        <input className="form-control" id="city" name="city" value="Anytown"/>
+                        <input className="form-control" id="city" name="city" />
                     </div>
                     <div className="form-group">
                         <label className="form-text" htmlFor="state">State</label>
