@@ -13,9 +13,11 @@ function show (data){
                         <h1>{data.place.name}</h1>
                         <h3>Rating</h3>
                         <p>No Rating Yet</p>
-                        <h4>About</h4>
+                        <h4>Description</h4>
                         <p>Located in {data.place.city},{data.place.state}</p>
                         <p>Type: {data.place.cuisines}</p>
+                        <h4>About</h4>
+                        <p>{data.place.showEstablished()}</p>
                     </div>
                 </div>
                 <div className='show-comments'>
