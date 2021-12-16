@@ -119,6 +119,7 @@ div.row {
 }
 
 .image-places {
+  max-width: 225px;
   max-height: 250px;
   width: auto;
 }
