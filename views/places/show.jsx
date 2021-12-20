@@ -8,13 +8,13 @@ function show(data) {
         </h3>
     )
     if (data.place.comments.length) {
-        comments = data.place.comments.map(c => {
+        comments = data.place.comments.map((c) => {
             return (
                 <div className="border">
                     <h2 className="rant">{c.rant ? 'Rant! 😡' : 'Rave! 😻'}</h2>
                     <h4>{c.content}</h4>
                     <h3>
-                        <stong>- {c.author}</stong>
+                        <strong>- {c.author}</strong>
                     </h3>
                     <h4>Rating: {c.stars}</h4>
                 </div>
@@ -39,10 +39,33 @@ function show(data) {
                         <p>{data.place.showEstablished()}</p>
                     </div>
                 </div>
-                {/* <div className='show-comments'>
-                    <h3>Comments</h3>
-                    <p>No comments yet!</p>
-                </div> */}
+                <div className='show-comments'>
+                    <h2>Comments</h2>
+                    {comments}
+                </div>
+                <div className="show-review">
+                    <form method="POST" action={`/places/${data.place.id}/comment`}>
+                        <div className='upper-show-review'>
+                            <div className="form-group user-name">
+                                <label className="form-text" htmlFor="author">User Name</label>
+                                <input className="form-control" id="author" name="author" required />
+                            </div>
+                            <div className="form-group rating">
+                                <label className="form-text" htmlFor="stars">Rating</label>
+                                <input className="form-control" type="number" step=".5" min="0" max="5" id="stars" name="stars" required />
+                            </div>
+                            <div className='form-group show-review-check'>
+                                <input className='checkbox' type="checkbox" id="rant" name="rant" />
+                                <label className="form-text" htmlFor="rant">Rant?</label>
+                            </div>
+                        </div>
+                        <div className="form-group">
+                            <label className="form-text" htmlFor="content">Content</label>
+                            <textarea className="form-control" id="content" name="content" required />
+                        </div>
+                        <input className="btn btn-primary form-submit" type="submit" value="Add Review" />
+                    </form>
+                </div>
                 <div className='show-buttons'>
                     <a href={`/places/${data.id}/edit`} className="btn btn-warning">
                         Edit
@@ -54,7 +77,7 @@ function show(data) {
                     </form>
                 </div>
             </main>
-        </Def>
+        </Def >
     )
 }
 
