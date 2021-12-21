@@ -107,26 +107,26 @@ router.post('/:id/comment', (req, res) => {
     })
 })
 
-router.delete('/:id/comment/:commentId', (req, res) => {
-  console.log(req.body)
-  req.body.rant = req.body.rant ? true : false
-  db.Place.findByIdAndDelete(req.params.id)
-    .then(place => {
-      db.Comment.delete(req.body)
-      place.comments.splice(comment.id)
-      place.save()
-        .then(() => {
-          res.redirect(`/places/${req.params.id}/`)
-        })
-    })
-    .catch(err => {
-      console.log('err', err)
-      res.render('error404')
-    })
-})
-
-// router.delete('/:id/rant/:rantId', (req, res) => {
-//   res.send('GET /places/:id/rant/:rantId stub')
+// router.delete('/:id/comment/:commentId', (req, res) => {
+//   console.log(req.body)
+//   req.body.rant = req.body.rant ? true : false
+//   db.Place.findByIdAndDelete(req.params.id)
+//     .then(place => {
+//       db.Comment.delete(req.body)
+//       place.comments.splice(comment.id)
+//       place.save()
+//         .then(() => {
+//           res.redirect(`/places/${req.params.id}/`)
+//         })
+//     })
+//     .catch(err => {
+//       console.log('err', err)
+//       res.render('error404')
+//     })
 // })
+
+router.delete('/:id/comment/:commentId', (req, res) => {
+  db.Comment.findByIdAndDelete(req.params.commentId).then(() => res.redirect(`/places/${req.params.id}`))
+})
 
 module.exports = router

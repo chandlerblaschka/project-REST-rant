@@ -7,4 +7,10 @@ let commentSchema = new mongoose.Schema({
     content: { type: String, default: '' }
 })
 
+commentSchema.post('findByIdAndDelete', function () {
+    Comment.delete({ comment: this._conditions._id }).then(deleteStatus => {
+        console.log(deleteStatus)
+    })
+})
+
 module.exports = mongoose.model('Comment', commentSchema)
